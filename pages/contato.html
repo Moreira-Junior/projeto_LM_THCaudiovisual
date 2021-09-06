@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/8c3a719844.js" crossorigin="anonymous"></script>
+  <link href="../css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Quando&display=swap" rel="stylesheet">
+  <title>THC Contato</title>
+
+</head>
+<body>
+
+  <nav class="flexbox">
+    <img class="logo" src="/img/logo-thc.png" alt="logo">
+    <br>
+    <a href="/index.html">HOME</a>
+    <br>
+    <a href="galeria.html">GALERIA</a>
+    <br>
+    <a href="sobre.html">SOBRE</a>
+    <br>
+    <a href="contato.html">CONTATO</a>
+  </nav>
+  
+  <article class="flexbox">
+    <h1 class="titulo">Contato</h1>
+    <div class="cont-contato">
+      <form action="/server/contato.php" method="POST">
+        <label for="cont-email">Email: </label>        <input type="email" name="cont-email" id="cont-email" placeholder="email@email.com">
+        <br>
+        <label for="cont-telefone">Telefone: </label>       <input type="number" name="cont-telefone"
+        id="cont-telefone" placeholder="(xx)xxxxx-xxxx">
+        <br>
+        <label for="cont-nome">Nome: </label>        
+        <input type="text" name="cont-nome" id="cont-nome">
+        <br>
+        <label for="cont-assunto">Assunto: </label>        
+        <input type="text" name="cont-assunto" id="cont-assunto">
+        <br>
+        <label for="cont-mensagem">Mensagem: </label>       
+        <input id="cont-mensagem" name="cont-mensagem" placeholder="Digite sua mensagem aqui...">
+        <br>
+        <input type="submit" value="Enviar!">
+         
+        
+    </div>
+    <div class="mapa">
+    <h2>Visite nossa galeria!</h2>
+    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.9173254445877!2d-34.87565898585287!3d-7.13555897196865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB%20-%20Campus%20Jo%C3%A3o%20Pessoa!5e0!3m2!1spt-BR!2sbr!4v1630884425052!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </article>
+  
+  <footer>
+
+    <div class="sobre">
+      <div class="coluna">
+      <img class="img-perfil" src="/img/sobre.png" alt="foto-perfil">
+      </div>
+      <div>
+      <p>Thyago Henrique é a THC AudioVisual e promove soluções audiovisuais para sua vida em fotos, vídeos, edições e designer.</p>
+      </div>
+      <a href="sobre.html" id="botao-sobre"><div class="botao">Saiba Mais</div></a>
+    </div>
+
+    <<div class="contato">
+      <p>Peça um orçamento!</p>
+      <div class="icons">
+        <a href="https://www.facebook.com/thyago.henrique.5"><span class="iconify" data-icon="akar-icons:facebook-fill"></span></a>
+        <a href="https://www.instagram.com/thcaudiovisual/"><span class="iconify" data-icon="akar-icons:instagram-fill"></span></a>
+        <a href="https://api.whatsapp.com/send?phone=558386156190"><span class="iconify" data-icon="akar-icons:whatsapp-fill"></span></a>
+      </div>
+      <br>
+      <a href="contato.html"><div class="botao">Contato</div></a>
+    </div>
+  </footer>
+
+</body>
+</html>
