@@ -36,7 +36,10 @@ nav .logo {
   width: 70%;
 }
 nav a {
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  padding-top: 1%;
 }
 article {
   grid-area: a;
