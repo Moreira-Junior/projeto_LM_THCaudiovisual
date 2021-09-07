@@ -6,8 +6,9 @@
   font-size: 2.5rem;
   color: #202020;
   text-align: center;
+  margin-top: 5%;
 }
-body {
+body{
   font-family: 'Quando', serif;
   font-size: 1rem;
   background-color: #D4D4D4;
@@ -18,32 +19,38 @@ body {
         "n f";
   grid-template-columns: 15% 85%;
 }
-a {
+a{
   text-decoration: none;
   color: #D4D4D4;
 }
-nav {
+header{
+  display: none;
+}
+nav{
   grid-area: n;
   background-color: #202020;
   text-align: left;
   padding-left: 15%;
   padding-right: 0;
+  display: flex;
+  flex-direction: column;
 }
-nav .logo {
+nav .logo{
   border-radius: 50%;
   margin-top: 10%;
   padding-left: -10%;
   width: 70%;
 }
-nav a {
+nav a{
   margin-top: 10%;
+  padding-top: 5%;
 }
-article {
+article{
   grid-area: a;
   margin-top: 0px;
   width: 100%;
 }
-footer {
+footer{
   margin-top: 5%;
   width: 100%;
   display: grid;
@@ -53,12 +60,11 @@ footer {
   font-size: 1rem;
   box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 -10px 10px rgba(0,0,0,0.23);
 }
-footer .img-perfil {
-
+footer .img-perfil{
   margin-right: 0;
   padding-right: 0;
 }
-.sobre {
+.sobre{
   grid-area: s;
   display: grid;
   grid-template-columns: 20% auto;
@@ -74,7 +80,7 @@ footer .img-perfil {
   grid-column: 2/2;
   justify-self: center;
 }
-.contato {
+.contato{
   grid-area: c;
   display: flex;
   flex-direction: column;
@@ -85,7 +91,7 @@ footer .img-perfil {
   text-align: center;
   background-color: #D4D4D4; 
 }
-footer .botao {
+footer .botao{
   background-color: #202020;
   color: #D4D4D4;
   border-radius: 10px 10px 10px 10px;
@@ -155,23 +161,31 @@ a:hover{
   margin-top: 5%;
   margin-bottom: 20%;
 }
-@media all and (max-width: 768px){
-  
-    footer{
-      font-size: 0.5rem;
-    }
-    body{
-      grid-template-columns: 25% 75%;
-      font-size: 0.8rem;
-    }
-    .titulo{
-      font-size: 1.5rem;
-    }
-    .iconify{
-      font-size: 0.8rem;
-    }
-    .menu-galeria, .menu-galeria a{
-      font-size: 0.8rem;
-    }
-    
+@media screen and (max-width: 600px){
+  body{
+    grid: "h"
+          "a"
+          "f";
+  }
+  header{
+    display: flex;
+    flex-direction: row;
+    background-color: #202020;
+    grid-area: h;
+    justify-content: center;
+    width: 100%;
+  }
+  nav{
+    display: none;
+  }
+  .logo{
+    border-radius: 50%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    padding-left: -10%;
+    width: 30%;
+  }
+  footer{
+    font-size: 0.7rem;
+  }
 }
