@@ -28,12 +28,18 @@ nav {
   text-align: left;
   padding-left: 15%;
   padding-right: 0;
+
 }
+
+
 nav .logo {
   border-radius: 50%;
   margin-top: 10%;
   padding-left: -10%;
-  width: 70%;
+  width: 40%;
+  animation-name: fade;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
 }
 nav a {
   display: flex;
@@ -93,7 +99,7 @@ footer .botao {
   color: #D4D4D4;
   border-radius: 10px 10px 10px 10px;
   padding: 10%;
-  width: 100%;
+  width: 120%;
   text-align: center;
 }
 .iconify{
@@ -106,7 +112,9 @@ footer .botao {
   width: 70%;
 }
 a:hover{
-  transform: scale(1.05)
+  transform: scale(1.05);
+  color: #D4D4D4;
+  
 }
 .cont-contato{
   text-align: left;
@@ -154,14 +162,32 @@ a:hover{
   font-size: 1.5rem;
   color: #202020;
 }
+
 .texto-sobre{
   margin-top: 5%;
   margin-bottom: 20%;
 }
+
+@keyframes fade {
+  25%{
+    transform: rotate(-2deg);
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75%{
+    transform: rotate(2deg);
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+
 @media all and (max-width: 768px){
   
     footer{
-      font-size: 0.5rem;
+      font-size: 0.4rem;
     }
     body{
       grid-template-columns: 25% 75%;
@@ -176,5 +202,11 @@ a:hover{
     .menu-galeria, .menu-galeria a{
       font-size: 0.8rem;
     }
+    nav .logo {
+    width: 25%;
+  }
+  nav .fixado{
+    position: inherit;
+  }
     
 }
