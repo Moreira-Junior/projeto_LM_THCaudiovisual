@@ -4,6 +4,8 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/8c3a719844.js" crossorigin="anonymous"></script>
   <link href="../css/style.css" rel="stylesheet" type="text/css">
   <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
@@ -14,36 +16,53 @@
 <body>
 
   <nav class="flexbox">
-    <img class="logo" src="/img/logo-thc.png" alt="logo">
-    <br>
-    <a href="/index.html">HOME</a>
-    <br>
-    <a href="galeria.html">GALERIA</a>
-    <br>
-    <a href="sobre.html">SOBRE</a>
-    <br>
-    <a href="contato.html">CONTATO</a>
+    <div class="fixado position-fixed">
+      <img class="logo" src="/img/logo-thc.png" alt="logo">
+      <br>
+      <a href="/index.html">HOME</a>
+      <br>
+      <a href="galeria.html">GALERIA</a>
+      <br>
+      <a href="sobre.html">SOBRE</a>
+      <br>
+      <a href="contato.html">CONTATO</a>
+    </div>
   </nav>
   
   <article class="flexbox">
     <h1 class="titulo">Contato</h1>
     <div class="cont-contato">
-      <form action="/server/contato.php" method="POST">
-        <label for="cont-email">Email: </label>        <input type="email" name="cont-email" id="cont-email" placeholder="email@email.com">
-        <br>
-        <label for="cont-telefone">Telefone: </label>       <input type="number" name="cont-telefone"
-        id="cont-telefone" placeholder="(xx)xxxxx-xxxx">
-        <br>
-        <label for="cont-nome">Nome: </label>        
-        <input type="text" name="cont-nome" id="cont-nome">
-        <br>
-        <label for="cont-assunto">Assunto: </label>        
-        <input type="text" name="cont-assunto" id="cont-assunto">
-        <br>
-        <label for="cont-mensagem">Mensagem: </label>       
-        <input id="cont-mensagem" name="cont-mensagem" placeholder="Digite sua mensagem aqui...">
-        <br>
-        <input type="submit" value="Enviar!">
+      <form class="row g-3">
+  <div class="col-md-4">
+    <label for="inputEmail4" class="form-label">Email</label>
+    <input type="email" class="form-control" id="inputEmail4">
+  </div>
+  
+  <div class="col-md-4">
+    <label for="telefone" class="form-label">Telefone</label>
+    <input type="tel" class="form-control" id="telefone">
+  </div>
+  <div></div>
+  <div class="col-4">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="nome">
+  </div>
+  <div class="col-4">
+    <label for="assunto" class="form-label">Assunto</label>
+    <input type="text" class="form-control" id="assunto">
+  </div>
+  <div class="col-md-8 " >
+    <label for="mensagem" class="form-label">Mensagem</label>
+    <input type="text" class="form-control" id="mensagem" placeholder="Digite aqui sua mensagem..." style="height: 100px">
+  </div>
+  
+  <div class="col-12">
+    <button type="submit" class="btn btn-secondary">Enviar!
+
+    </button>
+  </div>
+</form>
+      
          
         
     </div>
@@ -66,7 +85,7 @@
       <a href="sobre.html" id="botao-sobre"><div class="botao">Saiba Mais</div></a>
     </div>
 
-    <<div class="contato">
+    <div class="contato">
       <p>Peça um orçamento!</p>
       <div class="icons">
         <a href="https://www.facebook.com/thyago.henrique.5"><span class="iconify" data-icon="akar-icons:facebook-fill"></span></a>
