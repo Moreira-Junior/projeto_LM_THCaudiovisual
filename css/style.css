@@ -167,6 +167,12 @@ a:hover{
   margin-top: 5%;
   margin-bottom: 20%;
 }
+.menunav{
+  width: 5%;
+}
+.formcenter{
+  margin-left: 20%;
+}
 
 @keyframes fade {
   25%{
